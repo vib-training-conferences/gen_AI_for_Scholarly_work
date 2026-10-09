@@ -23,6 +23,8 @@ Group keywords into:
   - Broad
   
 4. Define Output (Style)
+Use the pipe "|" symbol for OR and refrain from writing out AND while keeping an syntactically valid search string.
+
 Output format: 
 A. Main Keywords - … 
 B. Related Terms and Synonyms | Concept | Alternative Terms | 
