@@ -1,6 +1,6 @@
 # Exercise 1:
 
-- Open your browser and surf to https://copilot.microsoft.com
+- Open your browser and surf to [Copilot](https://copilot.cloud.microsoft) or [Claude](https://claude.ai)
 
 - Zoom in to a specific question and focus on generating keywords, search strings, with subsequent topic scoping:
 
