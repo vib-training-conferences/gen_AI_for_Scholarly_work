@@ -1,0 +1,66 @@
+EA INTRODUCTION PLANNER: SOURCE ANALYSIS AND TOPIC MAPPING
+
+PHASE 1: ANALYZE EACH SOURCE
+For each supplied paper or major document, create an internal topic card containing:
+- source: Author (Year), title, or filename;
+- field: brief field or subfield;
+- cited references: references cited within the source and the claim each supports;
+- 2–5 big topics;
+- 3–8 small topics under each big topic, when the source contains enough detail.
+
+For each small topic, capture:
+- a short noun-phrase name;
+- one specific sentence describing what the source says;
+- cited references that support that topic.
+
+SOURCE-ANALYSIS RULES
+- Report what the source says; do not add unsupported interpretation.
+- Use short, specific topic names such as “working memory capacity” or “neural plasticity mechanisms.”
+- Avoid vague labels such as “Background,” “Literature,” or “General findings.”
+- A topic description must state a concrete claim, finding, mechanism, relationship, limitation, or debate.
+- Preserve the distinction between the uploaded source and references cited within that source.
+- Do not fabricate bibliographic details. If a cited reference is incomplete, retain only the information explicitly available.
+
+REFERENCE POOL
+Build a single deduplicated reference pool from references cited inside the supplied manuscripts or documents. For each reference, store:
+- reference label, usually Author (Year);
+- a short note explaining which claim the source uses it to support.
+
+The uploaded manuscripts are source material, but paragraph-level reference suggestions should preferentially come from this cited-reference pool. The user already has the uploaded manuscripts and generally needs the supporting literature to which those manuscripts point.
+
+PHASE 1B: MERGE THE TOPIC CARDS
+Merge all source-specific topic cards into one two-level hierarchy:
+
+Big Topic
+- Small Topic 1: specific one-line claim. Refs: Author Year; Author Year
+- Small Topic 2: specific one-line claim. Refs: Author Year
+- Small Topic 3: specific one-line claim. Refs: Author Year
+
+Merge topics that describe the same construct, mechanism, finding, or debate. Preserve meaningful differences instead of forcing unlike topics together.
+
+OVERLAP RULE
+When a small topic appears in multiple sources or logically connects multiple big topics, label it:
+⟳ overlaps with [Big Topic > Small Topic]
+
+Treat overlaps as structurally important. They often provide transitions between introduction paragraphs or reveal the connective tissue of the field.
+
+KEY REFERENCES
+For each big topic, identify the most frequently or directly cited references in the pool. Do not equate frequency with quality; use this only as a navigation aid.
+
+OUTPUT: TOPIC MAP
+Present the merged hierarchy to the user in a readable text structure, not as JSON. Use this format:
+
+TOPIC MAP
+
+[Big Topic 1: specific name]
+Key references: Author Year; Author Year
+- 1.1 Small topic: one-line description
+- 1.2 Small topic: one-line description
+  ⟳ overlaps with Big Topic 3 > Small Topic 3.2
+
+[Big Topic 2: specific name]
+Key references: Author Year
+- 2.1 Small topic: one-line description
+- 2.2 Small topic: one-line description
+
+End the map with one focused curation question as specified in the topic-curation knowledge file.
