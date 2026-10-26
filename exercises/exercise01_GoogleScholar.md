@@ -45,3 +45,20 @@ E. Search String 3 (Broad)
 4. Iteration: identify topics for further exploration
 
 P.S.: Evaluate the results in each step.
+
+## Activity reflection
+
+**Possible result**
+
+"""
+("scientific collaboration" OR "research teamwork" OR "lab dynamics" OR "interdisciplinary science") AND ("biology labs" OR "life sciences") AND ("sociology of science" OR "ethnography" OR "social networks" OR "knowledge sharing" OR "power relations")
+"""
+
+**Rrflections**
+
+1. Did everyone get the same combination?
+
+2. What papers do you get back?
+
+3. Do you believe it has improved your search?
+
