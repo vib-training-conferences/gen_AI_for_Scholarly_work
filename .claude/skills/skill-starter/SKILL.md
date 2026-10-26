@@ -1,6 +1,6 @@
 ---
 name: my-skill-name
-description: TODO — What this skill does + when to use it, with the trigger keywords a user would actually type. Required: max 1024 characters, third person. 
+description: TODO — What this skill does + when to use it, with the trigger keywords a user would actually type. Required - max 1024 characters, third person. 
 license: MIT
 metadata:
   author: TODO-your-github-username
