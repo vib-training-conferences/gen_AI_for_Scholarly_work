@@ -28,3 +28,20 @@ List one publication per line with the link for the paper.
 ## Acvtivity part 2
 
 - Try the tools with your own topic.
+
+## Extra challenge
+
+Ask each tool what other tools or the tool itself can do.
+
+1. What can you do for free and what can you do with paid accounts?
+
+2. What are the data sources the tool is using?
+
+3. What models is the tool relying on?
+
+4. What other things will this tool do? 
+
+*(Summarise, alerts, citations connected to Zotero, etc.)*
+
+
+
