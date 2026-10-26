@@ -24,3 +24,7 @@ List one publication per line with the link for the paper.
 2. What are the advantages and disadvantages of each?
 
 3. What would you choose and why?
+
+## Acvtivity part 2
+
+- Try the tools with your own topic.
