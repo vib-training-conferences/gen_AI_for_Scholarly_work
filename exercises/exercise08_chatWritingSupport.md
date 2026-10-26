@@ -19,3 +19,7 @@ Paragraph 1: general intro | Paragraph 2: Explaining data | Paragraph 3: Methodo
 Hurdles, Bustling, Harnessing, Unveiling the power,( …)
 
 
+
+1. Use the prompt in the GitHub to try out how you can steer the writing style.
+
+
