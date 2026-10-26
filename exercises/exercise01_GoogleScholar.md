@@ -1,8 +1,10 @@
 # Exercise 1:
 
-- Open your browser and surf to [Copilot](https://copilot.cloud.microsoft) or [Claude](https://claude.ai)
+- Open your browser and surf to [Copilot](https://copilot.cloud.microsoft) or [Claude](https://claude.ai) or your AI product of choice.
 
 - Zoom in to a specific question and focus on generating keywords, search strings, with subsequent topic scoping:
+
+## Steps to keep in mind
 
 ```
 1. Define AI Persona 
@@ -32,5 +34,14 @@ C. Search String 1 (Specific)
 D. Search String 2 (Balanced) 
 E. Search String 3 (Broad) 
 ```
+## Activity
 
-- Use the suggested search strings in Google scholar and evaluate the results.
+1. Use Copilot to generate keywords and generate a Google Scholar search string
+
+2. Iteration: Ask for different keywords
+
+3. Apply the string and explore what comes out of Google Scholar
+
+4. Iteration: identify topics for further exploration
+
+P.S.: Evaluate the results in each step.
