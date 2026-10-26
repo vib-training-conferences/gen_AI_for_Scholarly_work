@@ -1,20 +1,26 @@
 # Exercise 2:
 
-- Open your browser and surf to https://perplexity.ai 
 
-- Open another tab and surf to https://asta.allen.ai 
+**Prompt**
 
-Question to address:
+As a literature search expert and bioinformatician, list scientific publications about multiple omics and human protein complexome and metabolism. 
 
-Use this question: How to make training events and material more findable, accessible, interoperable and re-usable?
+List one publication per line with the link for the paper.
 
+**Activity**
 
-Prompt:
+- Open your browser and surf to https://undermind.ai, https://perplexity.ai and https://asta.allen.ai 
 
-List practical recipes to make training events and material more findable, accessible, interoperable and re-usable.
+- Use the same prompt (above) in all of them and compare the results
 
-How do you need to change the question to get more concrete answers?
+***Question to address:***
 
-Goal of exercise: **Try to identify concrete practical recipes which would help you how to do it.**
+1. Are the results the same?
+    
+    - exactly the same
+    - partially the same
+    - entirelly different
 
-Document your process and evaluate what are useful approaches for both tools.
+2. What are the advantages and disadvantages of each?
+
+3. What would you choose and why?
