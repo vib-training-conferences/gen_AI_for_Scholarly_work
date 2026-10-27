@@ -16,6 +16,7 @@ Time: 10 min
  - use guiding questions
        [What it does] + [When to use it] + [Trigger keywords] + [What NOT to use it for]
 
+An example:
 ```
 # ❌ Vague — will not trigger reliably
 description: Helps with PDFs.
@@ -30,6 +31,8 @@ description: Extract text and tables from PDF files, fill forms, and merge
 
 ## **Step 4: Fill in the other metadata of the frontmatter (between –--)**
 
+As reference:
+
 | Field | Required | Constraints |
 |---|---|---|
 | `name` | **Yes** | Max **64 chars**. Lowercase letters, numbers, hyphens only. No leading/trailing hyphen, no consecutive hyphens. **Must match the parent directory name.** |
@@ -41,7 +44,9 @@ description: Extract text and tables from PDF files, fill forms, and merge
 ## **Step 5:  Save the file**
 
 - Save the content of the developed skill in a folder with the same spelling than the name property of the frontmatter.
- 
+
+Tips for naming the skill:
+
 ```
 name: pdf-processing       # ✅ valid
 name: data-analysis        # ✅ valid
