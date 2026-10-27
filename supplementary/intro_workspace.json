@@ -1,0 +1,4583 @@
+{
+ "context": "Introduction (4 paragraphs, biology journal) for a paper on elucidating metabolic disorders via the protein complexome",
+ "sources": [
+  "Goel et al. (2024), Trends in co-fractionation mass spectrometry: a new gold-standard in global protein interaction network discovery, Current Opinion in Structural Biology",
+  "Havugimana et al. (2012), A census of human soluble protein complexes, Cell",
+  "Greenblatt et al. (2024), Discovery and significance of protein-protein interactions in health and disease, Cell",
+  "Ferreira et al. (2019), A proposed nosology of inborn errors of metabolism, Genetics in Medicine",
+  "Michalak et al. (2019), ComplexBrowser: identification and quantification of protein complexes in large-scale proteomics datasets, Molecular & Cellular Proteomics",
+  "Huang et al. (2023), PaxDb 5.0: Curated Protein Quantification Data Suggests Adaptive Proteome Changes in Yeasts, Molecular & Cellular Proteomics",
+  "Serrano et al. (2024), The One Hour Human Proteome, Molecular & Cellular Proteomics",
+  "Tsitsiridis et al. (2023), CORUM: the comprehensive resource of mammalian protein complexes–2022, Nucleic Acids Research (Database issue)",
+  "Milacic et al. (2024), The Reactome Pathway Knowledgebase 2024, Nucleic Acids Research (Database issue)",
+  "Balu et al. (2025), Complex Portal 2025: predicted human complexes and enhanced visualisation tools, Nucleic Acids Research (Database issue)",
+  "Wittig & Malacarne (2021), Complexome Profiling: Assembly and Remodeling of Protein Complexes, International Journal of Molecular Sciences",
+  "Gene Ontology Consortium / Aleksander et al. (2023), The Gene Ontology knowledgebase in 2023, Genetics",
+  "Snider et al. (2015), Fundamentals of protein interaction network mapping, Molecular Systems Biology",
+  "Drew et al. (2021), hu.MAP 2.0: integration of over 15,000 proteomic experiments builds a global compendium of human multiprotein assemblies, Molecular Systems Biology",
+  "Bludau et al. (2023), Rapid profiling of protein complex reorganization in perturbed systems, Journal of Proteome Research",
+  "Guzman et al. (2024), Ultra-fast label-free quantification and comprehensive proteome coverage with narrow-window data-independent acquisition, Nature Biotechnology",
+  "Buljan et al. (2023), A computational framework for the inference of protein complex remodeling from whole-proteome measurements (AlteredPQR), Nature Methods",
+  "Gorka et al. (2019), Protein complex identification and quantitative complexome by CN-PAGE, Scientific Reports",
+  "Fischer et al. (2025), hu.MAP3.0: atlas of human protein complexes by integration of >25,000 proteomic experiments, Molecular Systems Biology"
+ ],
+ "reference_pool": [
+  {
+   "ref": "Abramson et al (2024)",
+   "note": "AlphaFold3 used to model uncharacterized protein interactions",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Aebersold & Mann (2003)",
+   "note": "MS-based proteomics as central technology for proteome measurement",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Ahrné et al. (2013)",
+   "note": "assessment of label-free abundance estimation (top-3 approaches)",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Akashi & Gojobori (2002)",
+   "note": "metabolic efficiency shapes amino acid composition of proteomes",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Akinlaja et al. (2023)",
+   "note": "label-free DDA CF-MS protocol with PrInCE",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Al Shweiki (2017)",
+   "note": "label-free quantification variability in discovery proteomics",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Alahmad et al. (2020)",
+   "note": "NDUFC2 variants cause Leigh syndrome and stalled complex I biogenesis shown by CP",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Alberts (1998)",
+   "note": "the cell as a collection of protein machines",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Alexander et al (2022)",
+   "note": "heparan sulfate deficiency linked to autism",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Alfadhel et al. (2016)",
+   "note": "estimate of >600 known IEMs",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Alliance of Genome Resources Consortium (2022)",
+   "note": "Alliance gene pages showing GO ribbons",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Alston et al. (2016)",
+   "note": "TMEM126B biallelic mutations cause severe complex I deficiency",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Alston et al. (2018)",
+   "note": "NDUFA6 biallelic mutations cause isolated complex I deficiency",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Alston et al. (2020)",
+   "note": "NDUFAF8 mutations cause Leigh syndrome with isolated complex I deficiency",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Altman (2013)",
+   "note": "MetaCyc vs KEGG comparison; MetaCyc cross-referenced by GO",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Amberger (2019)",
+   "note": "OMIM.org resource on genes causing inherited diseases, linked to CORUM subunits",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Amberger et al. (2015)",
+   "note": "OMIM as comprehensive catalog but not a formal nosology",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Andersen et al. (2003)",
+   "note": "protein correlation profiling of the human centrosome via density gradients",
+   "cited_in": [
+    "Wittig & Malacarne (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Aranda et al. (2011)",
+   "note": "PSICQUIC unified query interface across PPI databases",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Arkin et al (2014)",
+   "note": "many therapeutics target protein complexes / PPIs",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Armstrong (2020)",
+   "note": "PDB structural records; 1279 complexes cross-referenced",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Aryal (2014)",
+   "note": "SEC-based global analysis of plant protein complexes; proteasome benchmark (70% CP, 9.3% RP)",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Aryal (2017)",
+   "note": "SEC with label-free protein correlation profiling of Arabidopsis leaf complexes",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ashburner (2000)",
+   "note": "Gene Ontology as the standard functional annotation resource for proteomic interpretation",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Serrano et al. (2024)",
+    "Tsitsiridis et al. (2023)",
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ashburner et al (2000); Fabregat et al (2016); Kanehisa et al (2014); Köhler et al (2014)",
+   "note": "GO, Reactome, KEGG, HPO annotations used for enrichment",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Ashburner et al (2000); Kanehisa et al (2014); Fabregat et al (2016); Köhler et al (2014)",
+   "note": "GO, KEGG, Reactome, HPO annotations for enrichment",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Aslund & Beckwith (1999)",
+   "note": "disulfide bond formation under oxidative stress",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Attrill (2019)",
+   "note": "high-throughput evidence annotations require particular care",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Babu et al. (2012)",
+   "note": "yeast membrane protein complex landscape (720 complexes) for conservation comparison",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Bache et al. (2018)",
+   "note": "Evosep LC with preformed gradients for rapid robust proteomics",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Balu et al (2025)",
+   "note": "Complex Portal 2025 incorporating predicted human complexes",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Banani (2017)",
+   "note": "biomolecular condensates as organizers of cellular biochemistry (new condensate scaffold term)",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bansal (2022)",
+   "note": "Rhea reaction knowledgebase capturing individual reactions and balanced chemical equations used by Reactome",
+   "cited_in": [
+    "Milacic et al. (2024)",
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Barabási et al. (2011)",
+   "note": "network medicine; subtle PPI dysfunction perturbs networks and produces disease phenotypes",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Barretina et al. (2012)",
+   "note": "Cancer Cell Line Encyclopedia",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Barrios-Rodiles et al. (2005)",
+   "note": "LUMIER co-IP luminescence assay for mammalian interactome mapping",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Barshir et al. (2013)",
+   "note": "TissueNet assigning PPIs to tissues",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Batth et al. (2014)",
+   "note": "offline high-pH reversed-phase fractionation",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Batth et al. (2019)",
+   "note": "protein aggregation capture sample preparation",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Baudouin-Cornu et al. (2001)",
+   "note": "sulfur assimilatory enzymes encoded with little Cys/Met",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Beavers (2023)",
+   "note": "Reactome-IDG portal to illuminate dark protein functions",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Beck et al. (2011)",
+   "note": "quantitative proteome of a human cell line",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Becker et al. (2004)",
+   "note": "Genetic Association Database for disease annotation",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Behrends et al. (2010)",
+   "note": "AP-MS of the human autophagy network as an example of tagged-bait studies",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Bekker-Jensen (2017)",
+   "note": "optimized shotgun strategy yields near-complete human proteomes (>12,000 gene products in ~35 h)",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Bekker-Jensen et al. (2020)",
+   "note": "Exploris 480 with FAIMS for short gradients",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Bergendahl et al. (2019)",
+   "note": "role of protein complexes in human genetic disease; altered complex stability linked to disease",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Berggård (2007)",
+   "note": "methods for detecting and analysing PPIs and their limitations",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Bian et al. (2020)",
+   "note": "microflow LC-MS/MS for thousands of proteomes",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Bickle & Traut (1971)",
+   "note": "sizes of 80S and 70S ribosomal proteins/subunits",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Bieri (2017)",
+   "note": "structure of chloroplast 70S ribosome (size ~2 MDa)",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Blau et al. (2014)",
+   "note": "physician's guide textbook using its own IEM classification",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Bludau & Aebersold (2020)",
+   "note": "proteomic/interactomic basis of functional diversity; CoFrac-MS and dynamic protein interactions",
+   "cited_in": [
+    "Wittig & Malacarne (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bludau (2021)",
+   "note": "discovery- versus hypothesis-driven detection of PPIs and complexes; target-decoy complex queries",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bludau et al. (2020)",
+   "note": "SEC-SWATH-MS protocol for parallel detection of hundreds of complexes",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bludau et al. (2023)",
+   "note": "21-min SWATH DIA gradient; 644 complexes incl. 17 rewired in differentiating THP-1",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Blume et al. (2020)",
+   "note": "nanoparticle protein corona for deep plasma proteomics",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Bokor et al. (2023)",
+   "note": "stepwise SECAT protocol for DIA SEC CF-MS",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Boldt et al. (2016)",
+   "note": "PaxDb used for stoichiometry/tissue-specific analysis; organelle-specific protein landscape identifies novel diseases",
+   "cited_in": [
+    "Huang et al. (2023)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Bonafe et al. (2015)",
+   "note": "nosology of skeletal dysplasias, now in its ninth iteration, as model nosology",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Bouwmeester et al. (2004)",
+   "note": "AP-MS map of the TNF-alpha/NF-kB pathway",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Bragg & Wagner (2009)",
+   "note": "single-atom (sulfur) substitutions visible to selection in >half of yeast proteome",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Branca et al. (2014)",
+   "note": "HiRIEF deep proteome coverage requiring long measurement time",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Braun et al. (2009)",
+   "note": "five HT assays each detect ~20–35% of gold-standard positives; combined 59%",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Brenes (2019)",
+   "note": "multibatch TMT causes false positives, batch effects and missing values",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bruel et al (2017)",
+   "note": "oral-facial-digital syndromes as example of disease linked to complex disruption",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Brunson (2023)",
+   "note": "guilt-by-association pathway assignment for about half of dark proteins",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Buljan et al. (2020)",
+   "note": "kinase interaction network: 300 kinases, 7,000 interactions, 2,379 proteins",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Bult (2019)",
+   "note": "MGI mouse annotations",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Bulutoglu (2016)",
+   "note": "direct evidence for MDH-CS-ACO metabolon and substrate channeling",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Burke et al. (2023)",
+   "note": "structurally resolved human PPI network via AlphaFold",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Butland et al. (2005)",
+   "note": "E. coli protein complex network in model organisms",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Cai (2014)",
+   "note": "NuRD cooperates with DNMTs in tumor suppressor silencing",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Casimiro (2012)",
+   "note": "cyclins and cell-cycle control in cancer",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Caspi (2020)",
+   "note": "MetaCyc database of metabolic pathways and enzymes",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Chalabi (2019)",
+   "note": "CoExpresso, assessing co-regulation of protein complexes across >100 human cell types",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Chanput (2014)",
+   "note": "THP-1 as in vitro model for monocyte-to-macrophage differentiation",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Chapple et al (2015)",
+   "note": "extreme multifunctional proteins from human PPI network",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Chatr-Aryamontri et al. (2015)",
+   "note": "BioGRID PPI database",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Chatzispyrou et al. (2018)",
+   "note": "Barth syndrome cells show widespread remodeling of mitochondrial complexes",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Chawade (2014)",
+   "note": "Normalyzer, normalization methods for omics data",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Cheng (2023)",
+   "note": "AlphaMissense proteome-wide missense variant effect prediction",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Cheung (2014)",
+   "note": "diel flux balance model: TCA cycle operates differently in light and dark",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Cho et al. (2022)",
+   "note": "OpenCell endogenous CRISPR tagging of human proteins",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Choi et al. (2011)",
+   "note": "SAINT scoring of quantitative AP-MS data",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Ciuffa (2022)",
+   "note": "architecture of TNF-receptor signaling complex by contextual interaction proteomics",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Clancy & Hovig (2014)",
+   "note": "from proteomes to complexomes; super-complexes and metabolons add a layer of organization",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Collins (2013)",
+   "note": "quantifying 14-3-3 interaction dynamics by AP-SWATH (limited complexes under perturbation)",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Collins (2017)",
+   "note": "multi-lab reproducibility of SWATH-MS; instrument drift",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Combe (2017)",
+   "note": "ComplexViewer visualisation of curated complexes",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Cooper et al. (1973)",
+   "note": "first classification of primary immunodeficiencies as model nosology",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Corzo et al. (2002)",
+   "note": "contiguous ABCD1/DXS1357E deletion syndrome excluded from nosology",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Couzens et al. (2013)",
+   "note": "Hippo pathway PPI network and phosphorylation-dependent interactions",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Cox & Mann (2008)",
+   "note": "MaxQuant, the most prominent quantification software; source of proteinGroups.txt format parsed by PaxDb",
+   "cited_in": [
+    "Huang et al. (2023)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Cox (2014)",
+   "note": "MaxLFQ label-free quantification intensities as input",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Cox et al (2024)",
+   "note": "ancient eukaryotic protein interactions illuminate genetic traits and disorders",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Csar (2001)",
+   "note": "Shc tyrosine phosphorylation required for CSF-1-mediated macrophage differentiation",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Cunatova et al. (2021)",
+   "note": "COX4I1 loss causes combined respiratory chain deficiency",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "D'Alesio (2016)",
+   "note": "CHD4 essential for BC growth",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "David (2012)",
+   "note": "PPI interface sites are hot spots for disease-associated nonsynonymous SNPs, linking complexes to disease",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Davis & Goadrich (2006); Saito & Rehmsmeier (2015)",
+   "note": "precision-recall preferred for imbalanced PPI classification",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "De Godoy et al. (2008)",
+   "note": "first complete eukaryotic (yeast) proteome by MS",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Deardorff et al. (2012)",
+   "note": "RAD21 mutations cause a CdLS-like cohesinopathy",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Del Toro (2022)",
+   "note": "IntAct molecular interaction data",
+   "cited_in": [
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Demichev et al. (2019)",
+   "note": "DIA-NN neural network software for high-throughput DIA",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Demichev et al. (2020)",
+   "note": "DIA-NN software",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Derks et al. (2023)",
+   "note": "plexDIA for sensitive multiplexed proteomics",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Desiere et al. (2006)",
+   "note": "PeptideAtlas repository",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Deutsch (2012)",
+   "note": "overview of the many overlapping MS proteomics file formats that hamper data integration",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Deutsch et al. (2020)",
+   "note": "ProteomeXchange in 2020; ~1000 projects/month submitted",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Dezso (2003)",
+   "note": "experimentally determined yeast complexes have a co-expressed core plus attached modifiers",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Diamond & Farzan (2013)",
+   "note": "antiviral functions of IFIT proteins",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Diehl (2016)",
+   "note": "Cell Ontology for annotating cell types",
+   "cited_in": [
+    "Milacic et al. (2024)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Drew (2021)",
+   "note": "hu.MAP 2.0 human protein complex map of 6965 complexes from >15,000 proteomic experiments",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)",
+    "Balu et al. (2025)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Drew et al (2017)",
+   "note": "hu.MAP 1.0, integration of >9,000 MS experiments; WMM and k-clique evaluation",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Drew et al (2017a)",
+   "note": "hu.MAP 1.0 integration of >9,000 MS experiments; WMM; k-clique evaluation",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Duck (2016)",
+   "note": "GO is a critical component supporting analysis of large-scale experiments (literature mining of database usage)",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Dunham et al. (2012)",
+   "note": "AP-MS principles, tagging strategies and limitations (abundant contaminants)",
+   "cited_in": [
+    "Snider et al. (2015)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Durinx (2016)",
+   "note": "ELIXIR Core Data Resources",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Eden (2009)",
+   "note": "GOrilla, GO-term enrichment tool for ranked gene lists",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Eliuk & Makarov (2015)",
+   "note": "evolution of Orbitrap instrumentation; speed from 3–5 Hz to 50 Hz",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Elser et al. (2006)",
+   "note": "nitrogen limitation signatures in plant vs animal proteomes",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Enright et al (2002)",
+   "note": "MCL clustering algorithm",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Erickson et al (2020)",
+   "note": "AutoGluon AutoML used to train the classifier",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Evans (2022)",
+   "note": "AlphaFold-Multimer complex structure prediction",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Ewing et al. (2007)",
+   "note": "large-scale human PPI mapping by MS",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Fabregat (2016)",
+   "note": "Reactome pathway knowledgebase",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Fabregat (2018)",
+   "note": "Reactome contributing 92,178 human pathway annotations",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Farias (2010)",
+   "note": "Sin3 interference induces epigenetic reprogramming in BC cells",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Fatland (2002)",
+   "note": "heteromeric ATP-citrate lyase in Arabidopsis",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Fauchon et al. (2002)",
+   "note": "sulfur sparing in yeast proteome under sulfur demand (~30% reduction)",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Feng et al. (2017)",
+   "note": "high dynamic range of model organism proteomes",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Fernandez-Vizarra et al. (2021)",
+   "note": "SILAC-based CP reveals co-existing structurally distinct respirasomes",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Ferre et al. (2014)",
+   "note": "PCBD1 mutations cause hypomagnesemia, making a former non-disease IEM clinically relevant",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ferro & Trabalzini (2013)",
+   "note": "Y2H and related methods in plant signalling; false positive/negative issues",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Fields & Song (1989)",
+   "note": "yeast two-hybrid system",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Fischer (2024)",
+   "note": "hu.MAP3.0 atlas of human complexes integrating >25,000 proteomic experiments (AP-MS, CF-MS, proximity labelling)",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Fischer-Zirnsak et al. (2015)",
+   "note": "dominant P5CS (ALDH18A1) variants cause autosomal-dominant cutis laxa",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Fossati et al. (2021)",
+   "note": "PCprophet framework for complex prediction and differential analysis; ~900 complexes in HeLa",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Fossati et al. (2023)",
+   "note": "CF-MS of jumbophage-bacteria interactions",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Frei et al. (2012)",
+   "note": "LRC-TriCEPS ligand-receptor capture",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Fröhlich et al. (2022)",
+   "note": "benchmarking DIA analysis strategies",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Fuhrmann et al. (2018)",
+   "note": "HIF1-alpha dependent degradation of TMEM126B under chronic hypoxia",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Fujiyama (2002)",
+   "note": "Parvulin-associated pre-rRNP complexes in ribosome biogenesis",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Futreal (2004)",
+   "note": "Cancer Gene Census of driver genes",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Garcia-Hernandez (2002)",
+   "note": "TAIR database for Arabidopsis monomeric masses and sequences",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Gardeitchik et al. (2018)",
+   "note": "MRPS2 mutations cause multiple OXPHOS deficiencies",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Garrod (1902)",
+   "note": "first description of an inborn error of metabolism (alkaptonuria)",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Garrod (1908)",
+   "note": "Croonian lectures; pentosuria as an asymptomatic early IEM",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Gaudet (2011)",
+   "note": "phylogenetic propagation of annotations (PAN-GO/IBA)",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gaudet (2021)",
+   "note": "GO representation of transcription factor functions",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gaun et al. (2023)",
+   "note": "SEC CF-MS of plasma complexes with automated prep and TMT (up to 18-plex)",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Gavin et al (2002); Ho et al (2002); Wang & Marcotte (2010)",
+   "note": "guilt-by-association function transfer from complexes",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Gavin et al. (2002)",
+   "note": "systematic yeast complex analysis by TAP-MS",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Tsitsiridis et al. (2023)",
+    "Drew et al. (2021)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Gavin et al. (2006)",
+   "note": "yeast proteome modularity; ~40% FDR of AP-MS",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Geiger et al. (2012)",
+   "note": "proteomes of 11 cell lines show ubiquitous expression of most proteins",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Huang et al. (2023)",
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Gene Ontology Consortium (2010)",
+   "note": "annotation extensions for capturing substrate specificity",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gene Ontology Consortium (2017)",
+   "note": "expansion of the GO knowledgebase used for annotation pipelines",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Gene Ontology Consortium (2023)",
+   "note": "GO knowledgebase 2023",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Milacic et al. (2024)",
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Gerovac et al. (2021)",
+   "note": "Grad-Seq mapping of stable ribonucleoproteins",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Ghandi et al. (2019)",
+   "note": "next-generation characterization of CCLE",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Giese et al. (2015)",
+   "note": "NOVA software for complexome profiling analysis",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Giese et al. (2021)",
+   "note": "mitochondrial complexome profiling protocol; native mass, stoichiometry, turnover",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Gillespie (2022)",
+   "note": "Reactome 2022; complexes represented within pathways",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)",
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Gillet (2012)",
+   "note": "DIA/SWATH targeted data extraction for consistent quantification",
+   "cited_in": [
+    "Bludau et al. (2023)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Giurgiu et al. (2019)",
+   "note": "CORUM resource of mammalian protein complexes",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Tsitsiridis et al. (2023)",
+    "Drew et al. (2021)",
+    "Guzman et al. (2024)",
+    "Buljan et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Glat et al. (2020)",
+   "note": "altered glutamate/excitotoxicity in MSA mouse models",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Go (2021)",
+   "note": "proximity-dependent biotinylation map of a human cell (static PPI map)",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Goh et al. (2007)",
+   "note": "disease genes peripheral; similar diseases' genes close in network",
+   "cited_in": [
+    "Snider et al. (2015)",
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Goncalves (2017)",
+   "note": "post-transcriptional attenuation of copy-number variation in cancer, complex subunits co-regulated at protein level",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Gong (2021)",
+   "note": "PharmGKB pharmacogenomic resource used for drug ADME annotation",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Gonzalez & Kann (2012)",
+   "note": "protein interactions and their perturbation in disease",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "González-Ballester et al. (2010)",
+   "note": "sulfur deprivation response in Chlamydomonas (45% reduction)",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gonçalves (2017)",
+   "note": "post-transcriptional attenuation of copy-number variation; proteomics beats transcriptomics for complex co-expression",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gonçalves et al (2022)",
+   "note": "pan-cancer proteomic map of 949 human cell lines",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Good (2021)",
+   "note": "digital convergence of Reactome and GO",
+   "cited_in": [
+    "Milacic et al. (2024)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gordon (2020a)",
+   "note": "comparative host-coronavirus PPI networks revealing pan-viral disease mechanisms",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gordon (2020b)",
+   "note": "SARS-CoV-2 protein interaction map revealing drug repurposing targets",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gordon et al. (2020)",
+   "note": "SARS-CoV-2 PPI map for drug repurposing",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Granholm et al. (2011)",
+   "note": "entrapment approach for FDR calibration",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Gremse et al. (2010)",
+   "note": "BRENDA Tissue Ontology for tissue metadata",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Griss et al. (2014)",
+   "note": "mzTab data exchange format for proteomics/metabolomics results",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Guerrero-Castillo et al. (2017)",
+   "note": "CP time course reveals complete stepwise assembly pathway of complex I",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Guerrero-Castillo et al. (2021)",
+   "note": "multiplexed complexome profiling with TMT (native-gel separation)",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Guharoy et al. (2022)",
+   "note": "PaxDb used to study degron masking and co-degrading functional modules",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Guo (2020)",
+   "note": "HDAC1/RBBP4 expression correlates with poor BC prognosis",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Gupta et al (2015)",
+   "note": "BioID proximity labeling of centrosome-cilium interface (116 bait conditions)",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Guruharsha et al. (2011)",
+   "note": "Drosophila complex network (556 complexes); orthology-based validation, Spearman r = 0.40",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Gustavsen (2019)",
+   "note": "Cytoscape network biology (ClueGO analysis planned)",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Guzman et al. (2024)",
+   "note": "nDIA on Orbitrap Astral; 9619 protein groups in 28-min gradients with CV <3%",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Haendel (2014)",
+   "note": "Uberon anatomy ontology for tissue annotation",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Hambleton (1996)",
+   "note": "LPS stimulation of macrophages activates JNK (inflammatory model)",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hamdi & Colas (2012)",
+   "note": "yeast two-hybrid methods; scalable but prone to false positives/negatives",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Hamosh et al. (2005)",
+   "note": "OMIM knowledgebase for disease annotation",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Han (2004)",
+   "note": "yeast PPI network modularity; complex subunits are likely to be essential",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hanson et al. (2021)",
+   "note": "PaxDb used to model enzyme catalytic cycles relevant to metabolic engineering",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hart et al (2006)",
+   "note": "human interactome size estimated at 154k–369k interactions",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Hart et al. (2007)",
+   "note": "hypergeometric scoring consensus map of yeast complexes",
+   "cited_in": [
+    "Snider et al. (2015)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Hartwell et al. (1999)",
+   "note": "modular organization of biological systems; co-complexed proteins are co-conserved",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hastings (2016)",
+   "note": "ChEBI small-molecule entities",
+   "cited_in": [
+    "Milacic et al. (2024)",
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Havugimana et al. (2007)",
+   "note": "dual-column IEX-HPLC pre-fractionation with shallow salt gradients",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Havugimana et al. (2012)",
+   "note": "census of human soluble complexes; >500 fractions, >600 complexes; origin of EPIC",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)",
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Havugimana et al. (2022)",
+   "note": "multiplex CF-MS: 25,235 PPIs and 772 complexes in breast cell lines",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Havugimana, Goel et al. (2022)",
+   "note": "TMT-multiplexed CF-MS with automated processing; 772 complexes in breast cancer lines; MS time cut from 96 to 16 days",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Hay et al. (2023)",
+   "note": "integrating DIA with CF-MS; sample-specific spectral libraries",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Hebert et al. (2014)",
+   "note": "one-hour yeast proteome (~4000 proteins in 70 min on Orbitrap Fusion)",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Heide & Wittig (2013)",
+   "note": "methods for composition/dynamics of macromolecular complexes",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Heide et al. (2012)",
+   "note": "complexome profiling identifies TMEM126B in mitochondrial complex I assembly",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Heil et al. (2023)",
+   "note": "Astral analyzer performance for quantitative DIA",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Hein et al. (2015)",
+   "note": "human interactome organized by stoichiometries and abundances",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Helm et al. (2014)",
+   "note": "~7500 human proteins in 1 day using fractionation and ion mobility",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Heusel et al. (2019)",
+   "note": "complex-centric profiling by SEC-SWATH-MS (CCprofiler); first DIA CF-MS",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Wittig & Malacarne (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Heusel et al. (2020)",
+   "note": "assembly state changes of the mitotic proteome; 949 complexes in HeLa",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hevler et al. (2021)",
+   "note": "in-gel cross-linking MS (IGX-MS) of coinciding protein assemblies",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Hill (2023)",
+   "note": "GO-CAM biochemical pathways identify phenotypes from pathway mutations (human-mouse)",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Ho et al. (2002)",
+   "note": "systematic identification of yeast complexes by MS",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Hochreiter (2006)",
+   "note": "FARMS Bayesian factor analysis summarization originally for Affymetrix probe data",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Hooper (2014)",
+   "note": "SUBAcon subcellular localization used to build true-negative pairs",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Hosp et al. (2015)",
+   "note": "interaction proteomics of neurodegenerative disease variants (APP-LRPPRC, mitochondrial dysfunction)",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Hu et al. (2009)",
+   "note": "global functional atlas of E. coli; guilt-by-association annotation of uncharacterized proteins",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Hu et al. (2019)",
+   "note": "EPIC toolkit for elution-profile-based complex inference; 16,098 PPIs/612 complexes in C. elegans",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Huang & Bader (2009)",
+   "note": "bait-specific error model; high FDR among metabolic-process proteins in worm Y2H",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Huerta-Cepas et al. (2019)",
+   "note": "eggNOG 5.0 orthology resource",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Hutchins et al. (2010)",
+   "note": "systematic AP-MS of human complexes; benchmark for precision/recall and validation",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Hutchison et al. (2016)",
+   "note": "minimal mycoplasma cell with 473 genes, nearly a third of unknown function",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Huttlin (2021)",
+   "note": "dual proteome-scale networks (BioPlex) tackling the complete human interactome",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Huttlin et al. (2015)",
+   "note": "BioPlex human interactome from ORFeome AP-MS",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Huttlin et al. (2017)",
+   "note": "AP-MS (BioPlex) as a traditional, lower-throughput interactome approach defining disease networks",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Ideker & Krogan (2012)",
+   "note": "differential network biology",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Ideker & Sharan (2008) / Vidal et al. (2011)",
+   "note": "reviews on protein networks in disease",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Iglewicz (1993)",
+   "note": "modified z score outlier threshold of 3.5",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Illsinger & Das (2010)",
+   "note": "estimate of >700 known IEMs",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ishikawa et al. (2022)",
+   "note": "ultrafast DIA proteomics on Q-Orbitrap",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Ivanic et al. (2009)",
+   "note": "affinity purification biased toward high-abundance proteins",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Jaeken et al. (2006)",
+   "note": "PREPL deletion in hypotonia-cystinuria syndrome (contiguous gene deletion)",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Jager et al. (2011)",
+   "note": "MiST scoring and HIV-human protein complexes",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Jansen & Gerstein (2004)",
+   "note": "imperfect gold standards in network prediction",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Jeffery (2015)",
+   "note": "moonlighting proteins; many are multifunctional enzymes",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Jeronimo et al. (2007)",
+   "note": "AP-MS of human transcription machinery",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Jiang et al. (2020)",
+   "note": "GTEx quantitative proteome map of the human body; tissue-specificity z-score",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Johnston (2017)",
+   "note": "biallelic CLUAP1 alterations cause craniofacial anomalies (Joubert/OFD overlap)",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Joshi-Tope (2003)",
+   "note": "original Reactome goal: describe molecular function of every human protein in a reaction network",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Joshi-Tope (2005)",
+   "note": "Reactome knowledgebase of biological pathways; tissue-specific overlay vision",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Jumper et al. (2021)",
+   "note": "AlphaFold protein structure prediction",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Jänes et al (2024)",
+   "note": "predicted structural impacts of missense variants; AlphaFold2 interface models",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Jørgensen (2005)",
+   "note": "metabolon formation and channeling influence metabolic fluxes and plant metabolic adaptation",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Kaake et al. (2014)",
+   "note": "in vivo cross-linking MS platform in living cells",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kamburov (2013)",
+   "note": "ConsensusPathDB used for Reactome enrichment",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kanehisa (2017)",
+   "note": "KEGG annotations of proteasome subunits and TCA cycle enzymes",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Kanehisa (2022)",
+   "note": "KEGG pathways cross-referenced by GO",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kanehisa (2023)",
+   "note": "KEGG, resource of reaction sequences/pathways across biology",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kelstrup (2018)",
+   "note": "Q Exactive HF-X performance supporting deep, fast shotgun proteomics",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Kerppola (2008)",
+   "note": "BiFC for visualizing PPIs in living cells",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kerr & Wright (2012)",
+   "note": "AVEXIS for low-affinity extracellular interactions",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kerrien et al. (2012)",
+   "note": "IntAct molecular interaction database",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kibbe (2015)",
+   "note": "Disease Ontology terms used to tag disease-specific reactions",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kim et al (2006)",
+   "note": "mapping yeast interactomes onto structures to identify mutually exclusive interactions",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kim et al. (2014)",
+   "note": "draft map of the human proteome",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kim et al. (2021)",
+   "note": "protein interaction landscape of breast cancer",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kirkwood et al (2013)",
+   "note": "size-fractionation quantitative proteomics of native complexes and isoforms",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)",
+    "Gorka et al. (2019)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kishore (2020)",
+   "note": "automated generation of gene function summaries",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kloetzel (2001)",
+   "note": "proteasome/immunoproteasome antigen processing and subunit exchange",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Klopfenstein et al. (2018)",
+   "note": "GOATOOLS for GO enrichment",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Kohler et al. (2008)",
+   "note": "random walk for disease gene prioritization in PPI networks",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Koopmans (2019)",
+   "note": "SynGO expert-curated synapse annotations",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Koos et al. (2014)",
+   "note": "proximity ligation assay for in situ PPIs",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kotlyar et al. (2015)",
+   "note": "FpClass prediction; understudied proteins underrepresented in interactome",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kourtis (2025)",
+   "note": "ProteomeHD.2 covariation dataset (2,498 perturbations, 23,000 raw files)",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kramer (2014)",
+   "note": "Ingenuity Pathway Analysis as a pathway-mapping tool",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Kristensen et al. (2012)",
+   "note": "SILAC CF-MS for temporal interactome changes",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Krogan et al. (2006)",
+   "note": "global yeast complex landscape; AP-MS FDR benchmark",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Kuhner (2009)",
+   "note": "Mycoplasma proteome organization; ~90% of soluble proteins are part of at least one complex",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kuiper (2022)",
+   "note": "GREEKC gene regulation knowledge commons collaboration",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kustatscher (2019)",
+   "note": "ProteomeHD co-regulation map of the human proteome for protein covariation evidence",
+   "cited_in": [
+    "Balu et al. (2025)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kustatscher et al (2022)",
+   "note": "understudied proteins as opportunity for functional proteomics",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kustatscher et al (2023)",
+   "note": "higher-order modular regulation of the human proteome",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Kwon (2015)",
+   "note": "SIN3 corepressor inhibition as therapy in triple-negative BC",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Kühner et al. (2009)",
+   "note": "proteome organization of a genome-reduced bacterium",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Lage et al. (2007)",
+   "note": "phenome-interactome network of complexes implicated in genetic disorders",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Lai (2011)",
+   "note": "NuRD chromatin remodelling complex in cancer biology",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Lambert (2013)",
+   "note": "differential interactomes by AP-DIA",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Lambert et al. (2015)",
+   "note": "BioID detects low-abundance proteins better than AP-MS",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Lancaster et al. (2023)",
+   "note": "fast deep phosphoproteomics on Orbitrap Astral",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Landrum (2020)",
+   "note": "ClinVar catalog classifying variants by effect and disease association",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Lapek (2017)",
+   "note": "dysregulated protein-association networks from proteomics of 41 BC cell lines predict vulnerabilities; Mahalanobis outlier scores; drug response data",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Lapek et al (2017); McShane et al (2016); Messner et al (2023)",
+   "note": "strongly covarying proteins are often co-complex subunits",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Lau et al. (2021)",
+   "note": "PaxDb used in S-nitrosocysteine inventories identifying core proteins in heart metabolic pathways",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Laursen (2015)",
+   "note": "dynamic metabolons mediate plasticity of specialized metabolism",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Lazear (2022)",
+   "note": "chemical probes perturbing complexes detected with only 5 SEC fractions",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Le Novère (2009)",
+   "note": "SBGN process description standard with which Reactome diagrams comply",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Lee et al. (2011)",
+   "note": "HumanNet functional network for disease-gene prioritization; integrated evidence",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Lee et al. (2017)",
+   "note": "IEMbase knowledgebase and mini-expert diagnostic platform to which the nosology is applied",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Leitner et al. (2016)",
+   "note": "XL-MS for structure and function of molecular machines",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Letunic et al. (2021)",
+   "note": "SMART domain annotation resource",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Lex (2014)",
+   "note": "UpSet plots inspiring the Complex Navigator",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Li et al. (2017)",
+   "note": "InWeb_IM scored human PPI network",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Li et al. (2020)",
+   "note": "TMTpro 16-plex isobaric labeling",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Li et al. (2021)",
+   "note": "TMTpro 18-plex multiplexing",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Liao (2019)",
+   "note": "WebGestalt 2019, gene set analysis tool using CORUM as reference data",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Liebeskind et al (2016)",
+   "note": "consensus gene ages used for promiscuous protein age analysis",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Lievens et al. (2009)",
+   "note": "MAPPIT mammalian two-hybrid in living cells",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Lievens et al. (2014)",
+   "note": "KISS kinase substrate sensor for intracellular PPIs",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Lim et al. (2023)",
+   "note": "AlphaFold screening uncovered DONSON complex in replication initiation",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Lin (2006)",
+   "note": "TOM/TIM dysfunction in Alzheimer's disease inhibits respiratory complexes and increases ROS",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Liu et al. (2016)",
+   "note": "cellular protein levels only partly depend on mRNA abundance; proteome drives phenotypes",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Lo Surdo (2023)",
+   "note": "SIGNOR signaling network resource",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Lobingier (2017)",
+   "note": "spatiotemporally resolved interaction networks by proximity labeling",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Lobo-Jarne et al. (2020)",
+   "note": "complex IV assembly pathways and supercomplex stabilization; stalled intermediates join supercomplexes",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Lu et al. (2020)",
+   "note": "PPI modulators and clinical trials; few candidate therapies reach trials",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Luck et al. (2020)",
+   "note": "HuRI binary reference interactome: 56,406 PPIs among 9,094 proteins",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Ludwig et al. (2018)",
+   "note": "DIA SWATH-MS for quantitative proteomics",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Lushchak (2014)",
+   "note": "aconitase post-translational modification links TCA cycle, iron and redox",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ma (2021)",
+   "note": "few-shot learning drug-response models; CORUM used in analysis of experimental disease data",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Ma et al. (2019)",
+   "note": "iProX integrated proteome resource",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "MacDougall (2021)",
+   "note": "UniRule automatic annotation with expert review",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Mallam et al (2019)",
+   "note": "DIF-FRAC: systematic discovery of endogenous ribonucleoprotein complexes; independent validation of CCDC9-EJC",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Malovannaya et al. (2010)",
+   "note": "IP-MS for endogenous protein complexes as a traditional approach",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Malovannaya et al. (2011)",
+   "note": "large-scale immunoprecipitation of endogenous human coregulator complexome; validation of 123 complexes",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Mani et al (2015)",
+   "note": "MoonProt database (106 human moonlighting proteins)",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Marcotte (2016)",
+   "note": "BC subtype-specific essential genes",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Martens et al. (2011)",
+   "note": "mzML community standard for MS data",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Martin-Salazar (2022)",
+   "note": "CPLANE, IFT and BBSome complexes in cilia assembly and ciliopathies",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Martinez-Val et al. (2022)",
+   "note": "review on obtaining complete human proteomes",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Martínez-Val et al. (2023)",
+   "note": "Hybrid-DIA combining targeted and discovery proteomics",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Matalon et al (2014)",
+   "note": "subunits of the same complex often show discordant expression",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Mateus et al. (2020)",
+   "note": "thermal stability correlation supports PPIs",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Mazel & Marlière (1989)",
+   "note": "adaptive eradication of Met/Cys from cyanobacterial phycobilisome proteins",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "McBride et al. (2017) / Larance et al. (2016)",
+   "note": "membrane protein complexes by correlation profiling",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "McDonald (2014)",
+   "note": "Enzyme Commission classification cross-referenced by GO",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "McWhite et al. (2020)",
+   "note": "pan-plant complex map across 13 species",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "McWhite et al. (2021)",
+   "note": "CF-MS protocol (low vs high salt) and cfmsflow pipeline; CF-MS reveals native PPIs less biased",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Meier et al. (2015)",
+   "note": "PASEF on timsTOF",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Meier et al. (2018)",
+   "note": "PASEF on trapped ion mobility TOF (>100 Hz)",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Meier et al. (2020)",
+   "note": "diaPASEF; >7600 proteins in 2 h",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Meldal (2015)",
+   "note": "EBI Complex Portal, curated encyclopaedia of macromolecular complexes",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Meldal (2019)",
+   "note": "Complex Portal 2018 as unifying resource with stable complex identifiers",
+   "cited_in": [
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Meldal (2021a)",
+   "note": "first draft of the yeast complexome in Complex Portal",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Meldal (2021b)",
+   "note": "Complex Portal 2022 (previous release) and E. coli complexome",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Meldal (2022)",
+   "note": "Complex Portal 2022; curated complexes across organisms",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Mellacheruvu et al. (2013)",
+   "note": "CRAPome contaminant repository for AP-MS",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Mertins (2016)",
+   "note": "proteogenomic dataset of 77 BC patients plus phosphorylation-based pathway activities",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Messner et al. (2020)",
+   "note": "ultra-high-throughput clinical proteomics for COVID-19 classifiers",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Messner et al. (2021)",
+   "note": "ultra-fast proteomics with scanning SWATH",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Messner et al. (2023)",
+   "note": "proteomic landscape of genome-wide yeast genetic perturbations",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Mi (2019)",
+   "note": "PANTHER gene set enrichment analysis launched from GO",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Milacic (2024)",
+   "note": "Reactome pathways; 825 complexes cross-referenced",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Monzio Compagnoni & Di Fonzo (2019)",
+   "note": "MSA pathogenesis unknown beyond α-synuclein aggregation",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Morava et al. (2015)",
+   "note": "redefinition of inborn metabolic diseases as any condition where impaired biochemical pathway is intrinsic to pathophysiology",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Moriya et al. (2019)",
+   "note": "jPOST proteomics repository",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Mosca (2013)",
+   "note": "Interactome3D structural complex predictions used for interacting pairs",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Moutaoufik et al. (2019)",
+   "note": "rewiring of human mitochondrial interactome during neuronal reprogramming (crosslinked CF-MS)",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Muller et al. (2016)",
+   "note": "cryo-slicing BN-MS for high-resolution complexome profiling",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Mungall et al. (2012)",
+   "note": "Uberon anatomy ontology for tissue metadata",
+   "cited_in": [
+    "Huang et al. (2023)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Munoz-Torres (2017)",
+   "note": "AmiGO and QuickGO access to GO data",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Muntel (2019)",
+   "note": ">10,000 proteins quantified in a single LC-MS run",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Müller et al. (2020)",
+   "note": "proteome landscape of the kingdoms of life",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Nadendla (2022)",
+   "note": "Evidence and Conclusion Ontology codes for complex evidence",
+   "cited_in": [
+    "Balu et al. (2025)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Nagaraj et al. (2011)",
+   "note": "deep HeLa proteome used to assess coverage and abundance bias",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Nam (2007)",
+   "note": "CIN85 complex in AMAP1-mediated BC invasion, an altered-PQR hit in basal cell lines",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Navlakha & Kingsford (2010)",
+   "note": "random walk algorithms especially effective for disease gene prediction",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Nepusz et al (2012); Enright et al (2002)",
+   "note": "ClusterOne and MCL clustering algorithms",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Nepusz et al. (2012)",
+   "note": "ClusterONE for detecting overlapping complexes in PPI networks",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Havugimana et al. (2012)",
+    "Snider et al. (2015)",
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Neumann et al. (2010)",
+   "note": "genome-wide RNAi phenotypic profiling of cell division genes",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Nielsen et al. (2006)",
+   "note": "extent of modifications and dynamic range in human proteome samples",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Nolte & Langer (2021)",
+   "note": "ComplexFinder machine-learning analysis of native fractionation data",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Nurk (2022)",
+   "note": "complete human genome sequence; 19,969 protein-coding genes as denominator for coverage",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Obata (2011)",
+   "note": "mitochondrial protein complexes rearrange under oxidative stress in Arabidopsis",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Oberdorf (2009)",
+   "note": "complex topology determines protein dosage sensitivity; subunits needed at defined quantitative ratios",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Ochoa (2023)",
+   "note": "Open Targets platform integrating Complex Portal for drug target identification",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Ochoa et al. (2020)",
+   "note": "PaxDb used to verify methods; functional landscape of human phosphoproteome",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Ogata (1999)",
+   "note": "KEGG pathway database for mapping proteins to pathways",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Oliveira & Sauer (2012)",
+   "note": "PTMs regulate yeast metabolism",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Oliver (2000)",
+   "note": "guilt-by-association for functional annotation",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Olsen et al. (2010)",
+   "note": "phosphorylation site occupancy during mitosis",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Omenn et al. (2022)",
+   "note": "HUPO Human Proteome Project report; human proteome complexity (isoforms, PTMs, dynamic range)",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Omenn et al. (2024)",
+   "note": "2023 HUPO report; 18,397 human proteins with credible expression evidence",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Ong et al. (2002)",
+   "note": "SILAC labeling for quantitative comparison",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Oprea (2018)",
+   "note": "~6300 'dark' understudied human proteins",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Orchard et al. (2012)",
+   "note": "IMEx consortium coordinating PPI curation",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Ori (2016)",
+   "note": "spatiotemporal variation of mammalian protein complex stoichiometries in proteomic data",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Oughtred (2019)",
+   "note": "BioGRID; pairs reported in two or more AP-MS studies",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Oughtred et al. (2021)",
+   "note": "BioGRID curated interaction database",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Pal (2013)",
+   "note": "ribosomal protein abundance stable over the diurnal cycle; polysome loading tracks sucrose",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Palenikova et al. (2021a)",
+   "note": "SILAC duplexing CP to study respiratory chain assembly defects",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Palenikova et al. (2021b)",
+   "note": "qDGMS and ComPrAn R package for macromolecular complexes",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Pang et al. (2020)",
+   "note": "analytical guidelines for CF-MS from yeast gold-standard complexes; guilt-by-association model",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Panza et al. (2016)",
+   "note": "ALDH18A1 variants cause dominant spastic paraplegia SPG9 via dominant-negative mechanism",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Paysan-Lafosse (2022)",
+   "note": "InterPro2GO electronic annotation",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Perez-Riverol (2019)",
+   "note": "PRIDE repository source of T-cell dataset",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Perkins et al. (2010)",
+   "note": "transient vs stable PPIs; interface properties and linear motifs complicate detection/prediction",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Pesquita et al. (2009) / Yang et al. (2012)",
+   "note": "GO semantic similarity for network denoising",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Petrosius et al. (2023)",
+   "note": "Astral analyzer for single-cell proteomics",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Petschnigg et al. (2014)",
+   "note": "MaMTH for full-length mammalian membrane PPIs; WT vs oncogenic EGFR interactors",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Pino et al. (2020)",
+   "note": "Skyline; quantifiable peptides as key metric",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Pié et al. (2010)",
+   "note": "NIPBL, SMC1A, SMC3 mutations in Cornelia de Lange syndrome",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Piñero (2017)",
+   "note": "DisGeNET disease-gene associations",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Popow et al. (2011)",
+   "note": "HSPC117 as essential subunit of human tRNA splicing ligase complex",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Porras (2020)",
+   "note": "IMEx consortium unified molecular interaction dataset providing experimental evidence",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Poulos (2020)",
+   "note": "strategies for large-scale reproducible proteomics; MS proteomics nearing clinical/biomarker suitability",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Poulton et al (2011); Abdel-Salam et al (2012); Shalev et al (2014)",
+   "note": "IER3IP1 mutations cause microcephaly, epilepsy, diabetes syndrome (MEDS)",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Pourhaghighi et al. (2020)",
+   "note": "BraInMap of murine brain complexes (27,403 PPIs/1000 complexes)",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Greenblatt et al. (2024)",
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Pozniak et al. (2016)",
+   "note": "10,043 protein groups from MCF7 via deep offline fractionation",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Przybyla & Gilbert (2022)",
+   "note": "new era in functional genomics screens",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Quaglia (2022)",
+   "note": "DisProt intrinsically disordered protein annotation collaboration",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "RNAcentral Consortium (2021)",
+   "note": "RNAcentral IDs for nucleic acid participants",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Radivojac (2013)",
+   "note": "CAFA large-scale evaluation of computational function prediction",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Ramani et al. (2008)",
+   "note": "human PPI map from co-expression; prior large-scale prediction and sucrose-gradient fractionation",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Rauniyar (2014)",
+   "note": "isobaric labeling (TMT/iTRAQ) quantification",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Reijns & Jackson (2014)",
+   "note": "RNaseH2 in Aicardi–Goutières syndrome",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Rensvold et al. (2022)",
+   "note": "deep multiomic profiling of mitochondrial protein functions (HAP1 KO cell resource incl. MGME1)",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Rhee (2008)",
+   "note": "most GO annotations derive from in silico prediction/text mining; use and misuse of GO",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Rhodes et al. (2005)",
+   "note": "probabilistic model of the human PPI network (computational prediction)",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Richards et al. (2015)",
+   "note": "protocol for one-hour yeast proteome analysis",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Richards et al. (2021)",
+   "note": "MS-based PPI networks for studying human disease; source of AP-MS/CF-MS figure",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Rigaut et al. (1999)",
+   "note": "tandem affinity purification (TAP) tag",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Ritchie (2015)",
+   "note": "limma for differential expression analysis",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Robinson & Srere (1985)",
+   "note": "organization of TCA cycle enzymes in mitochondria",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Robinson (1987)",
+   "note": "characterization of the Krebs TCA cycle metabolon",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Robinson (2017)",
+   "note": "HLA allele polymorphism; UniProt collapsing of HLA entries",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Rocha et al. (2023)",
+   "note": "functional unknomics: many human genes still lack known function",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Rogowska-Wrzesinska (2014)",
+   "note": "heteromer score: co-expression linearity of complex subunits as proteomic data quality measure",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Rolland et al. (2014)",
+   "note": "proteome-scale human binary map; literature PPIs poorly reproducible; PrePPI bias",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Rosenberger et al. (2020)",
+   "note": "SECAT network-centric analysis of SEC-SWATH-MS",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Roumeliotis (2017)",
+   "note": "genomic determinants of protein abundance; subunit inactivation affects partner abundance in colorectal cancer cells",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Rousseau (2018)",
+   "note": "proteasome assembly/activity deregulation in neurodegenerative disease, example of complex-level disease",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Roux et al. (2012)",
+   "note": "BioID proximity labeling",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Wittig & Malacarne (2021)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Ruepp et al. (2010)",
+   "note": "CORUM curated mammalian complexes; <1/5 of human ORFs annotated as complex subunits; training reference",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Michalak et al. (2019)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Rutherford (2024)",
+   "note": "PomBase contributing S. pombe complexes",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Ryan (2017)",
+   "note": "co-regulated protein complexes in breast cancer; loss of one subunit causes collateral loss of partners; correlation change indicates (dis)assembly",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Rydbirk et al. (2022)",
+   "note": "MSA brain proteome implicates complement and coagulation cascade",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Röst (2014)",
+   "note": "OpenSWATH automated targeted DIA analysis",
+   "cited_in": [
+    "Bludau et al. (2023)",
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Sae-Lee et al. (2022)",
+   "note": "multidimensional CF-MS of human red blood cell interactome (3229 PPIs/100 complexes)",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Saeed & Deane (2006)",
+   "note": "protein age correlates with interaction connectivity",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Sahni et al. (2015)",
+   "note": "widespread perturbation of interactions by disease-associated mutant alleles",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Sanchez-Caballero et al. (2016)",
+   "note": "TMEM126B mutations cause muscle weakness and isolated complex I deficiency",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Sanchez-Caballero et al. (2020)",
+   "note": "TMEM70 functions in assembly of complexes I and V",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Sanchez-Garcia (2014)",
+   "note": "Helios BC driver predictions",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Saudubray & Charpentier (2014)",
+   "note": "prior categorization of metabolic disorders by clinical presentation",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Saudubray et al. (2016)",
+   "note": "textbook Inborn Metabolic Diseases with differing classification",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Saverimuttu (2021)",
+   "note": "expert GO curation of the blood-brain barrier for Alzheimer's and neurological disease analysis",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Schmidt (2014)",
+   "note": "bioinformatic analysis of proteomics data incl. domain/motif analysis",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Schoch et al. (2020)",
+   "note": "NCBI taxonomy",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Schubert (2017)",
+   "note": "proteomics has moved from qualitative lists to quantitative proteome states across many conditions",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Schwanhausser et al. (2011)",
+   "note": "iBAQ quantification value used in CP",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Scott et al. (2017)",
+   "note": "interactome disassembly during apoptosis (SEC/IEX CF-MS)",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Selak et al. (2005)",
+   "note": "heterozygous SDH variants cause paraganglioma likely via succinate inhibiting HIF prolyl hydroxylases",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Senkler (2017)",
+   "note": "mitochondrial complexome of Arabidopsis by native fractionation",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Senkler et al. (2018)",
+   "note": "mistletoe lacks complex I with rearranged respiratory chain",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Shannon (2003)",
+   "note": "Cytoscape network visualization (basis of Cytoscape.js used in CORUM co-expression tool)",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Sharma et al. (2014)",
+   "note": "ultradeep human phosphoproteome",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Shieh (2000)",
+   "note": "K+ channel mutations cause cardiovascular, neurological or metabolic diseases",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Shrestha (2021)",
+   "note": "multiomics of low-grade serous ovarian carcinoma using CORUM",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Siegfried (2013)",
+   "note": "IFIT2 amplifies LPS-induced TNF-alpha secretion",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Signes & Fernandez-Vizarra (2018)",
+   "note": "assembly of mammalian OXPHOS complexes I–V and supercomplexes",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Simaite et al. (2014)",
+   "note": "recessive PCBD1 mutations cause early-onset diabetes",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Sinitcyn et al. (2023)",
+   "note": "17,717 protein groups, 80% median sequence coverage via multi-protease deep sequencing",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Skinnider & Foster (2021)",
+   "note": "meta-analysis of 206 CF-MS experiments; draft human interactome; ~700,000 PPIs across 27 species",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Skinnider (2021)",
+   "note": "PrInCE, PPI network inference and rewiring detection from CoFrac-MS",
+   "cited_in": [
+    "Bludau et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Skinnider (2021b)",
+   "note": "atlas of PPIs across mouse tissues",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Skinnider et al. (2021, Bioinformatics)",
+   "note": "PrInCE R/Bioconductor package",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Skinnider et al. (2021, Cell)",
+   "note": "SILAM CF-MS atlas of 125,696 PPIs across seven mouse tissues",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Skinnider et al. (2023)",
+   "note": "CFdb harmonized CF-MS resource across 32 species",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Skowronek et al. (2022)",
+   "note": "dia-PASEF with deep libraries; >7700 proteins in 44 min",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Skowronek et al. (2023)",
+   "note": "Synchro-PASEF interference removal in DIA",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Smith (2005)",
+   "note": "Relations Ontology causal relations linking activity units",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Smith (2020)",
+   "note": "RGD rat annotations",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Snel (2000)",
+   "note": "STRING PPI network partitioned into complex hypotheses",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Snider et al. (2010)",
+   "note": "membrane yeast two-hybrid (MYTH) for membrane protein interactions",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Solaini (2011)",
+   "note": "oxidative phosphorylation alterations in cancer cells",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Sollie et al. (2013)",
+   "note": "no matches for 76% of metabolic disorders in ICD-10 and 54% in SNOMED-CT",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Soong (2008)",
+   "note": "physical PPIs predicted from microarrays; comparison of ROC performance",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Sotiriou (2009)",
+   "note": "luminal A subtype molecularly resembles healthy tissue",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Sowa et al. (2009)",
+   "note": "AP-MS of human deubiquitinating enzyme interaction landscape",
+   "cited_in": [
+    "Havugimana et al. (2012)",
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Srihari & Leong (2013)",
+   "note": "integrating clustering with other information improves complex prediction",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Stacey et al. (2017)",
+   "note": "PrInCE approach for interactome prediction from co-elution data; abundance correlates with interactors",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Stenton et al. (2021)",
+   "note": "impaired DNAJC30-mediated complex I repair causes recessive LHON",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Stewart et al. (2023)",
+   "note": "parallelized Orbitrap/Astral acquisition; >10,000 protein groups in 48 min",
+   "cited_in": [
+    "Serrano et al. (2024)",
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Stoeger et al (2018)",
+   "note": "research bias toward well-annotated genes",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Storey (2002)",
+   "note": "q-value / FDR estimation",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Strecker et al. (2010)",
+   "note": "large-pore BN gels separating complexes up to 60 MDa",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Stukalov (2021)",
+   "note": "multilevel proteomics of host perturbations by SARS-CoV-2 and SARS-CoV",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Swaney et al. (2021)",
+   "note": "head and neck cancer PPI map; PIK3CA mutants bind HER3 more tightly",
+   "cited_in": [
+    "Greenblatt et al. (2024)",
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Swart (2018)",
+   "note": "HiT-Gel high-throughput in-gel digestion",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Sweetlove & Fernie (2013)",
+   "note": "spatial organization of plant metabolism / micro-compartmentation",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Szczepanowska et al. (2020)",
+   "note": "pSILAC-CP shows CLPP-dependent salvage/repair of complex I N-module",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Szklarczyk (2017)",
+   "note": "STRING PPI association networks combining co-expression, prediction, experiments and text mining",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Szklarczyk et al (2008)",
+   "note": "paralogs as mutually exclusive complex subunits in yeast",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Szklarczyk et al. (2015)",
+   "note": "STRING functional and predicted associations database",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Szklarczyk et al. (2021)",
+   "note": "STRING database v11.5; identifier space and PPI network used for PaxDb quality scoring",
+   "cited_in": [
+    "Huang et al. (2023)",
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Sánchez et al. (2021)",
+   "note": "benchmarking intensity-based absolute quantification (iBAQ) method used in PaxDb",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Tan (2017)",
+   "note": "T-cell activation proteomics/phosphoproteomics test dataset (bioenergetics, AP-1 dynamics)",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Tanahashi (1993)",
+   "note": "structure of 20S and 26S proteasomes (CP smaller than RP)",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Tate (2019)",
+   "note": "COSMIC catalog of somatic mutations in cancer",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Teo et al. (2014)",
+   "note": "SAINTexpress scoring of AP-MS interactions",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Thomas (2017)",
+   "note": "GO and the meaning of biological function",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Thomas (2019)",
+   "note": "GO-CAM causal activity models",
+   "cited_in": [
+    "Milacic et al. (2024)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Thomas (2022)",
+   "note": "PANTHER phylogenetic trees for PAN-GO curation",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Tillier & Charlebois (2009)",
+   "note": "human protein coevolution network as functional evidence",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Torto-Alalibo (2009)",
+   "note": "PAMGO terms for microbe-host interactions",
+   "cited_in": [
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Treiber et al (2017)",
+   "note": ">3,000 RNA hairpin pull-down MS runs reused via WMM",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Trip et al (2025)",
+   "note": "tissue-specific protein association atlas for candidate disease gene prioritization",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Tsai et al. (2024)",
+   "note": "targeted protein degradation (PROTACs, molecular glues) exploiting PPIs",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Tsitsiridis et al. (2023)",
+   "note": "CORUM 2022 mammalian protein complex resource",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Tüshaus et al. (2023)",
+   "note": "timsTOF HT reference data; region-resolved human brain proteome",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Uetz (2000)",
+   "note": "comprehensive yeast PPI analysis (Y2H/AP-MS scale limitations)",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Uhlen et al (2015)",
+   "note": "Human Protein Atlas tissue-based expression data",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Uhlén et al (2015)",
+   "note": "Human Protein Atlas expression and localization data",
+   "cited_in": [
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "UniProt Consortium (2011)",
+   "note": "UniProt disease annotations",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "UniProt Consortium (2017)",
+   "note": "UniProt accessions as required input identifiers",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Gene Ontology Consortium / Aleksander et al. (2023)"
+   ]
+  },
+  {
+   "ref": "UniProt Consortium (2023)",
+   "note": "canonical protein forms used by Reactome",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "UniProt Consortium (2024)",
+   "note": "UniProt IDs referencing protein participants; main protein reference database",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Urrutia & Hurst (2003)",
+   "note": "highly expressed genes show signatures of selection",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Valencia et al. (2023)",
+   "note": "mSWI/SNF complex perturbations in neurodevelopmental disorders",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Van Puyvelde et al. (2022)",
+   "note": "LFQ benchmark dataset; shift from DDA to DIA",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Varjosalo et al. (2013)",
+   "note": "three-step AP-MS contaminant filtering improving reproducibility",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Venkatesan et al. (2009)",
+   "note": "framework for HT PPI dataset quality (completeness, sensitivity, precision)",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Vidal et al. (2011)",
+   "note": "interactome networks illuminate conserved and disease-related pathways",
+   "cited_in": [
+    "Havugimana et al. (2012)"
+   ]
+  },
+  {
+   "ref": "Vidoni et al. (2017)",
+   "note": "MR-1S interacts with PET100/PET117 in module-based COX assembly",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Vizcaíno et al. (2014)",
+   "note": "ProteomeXchange as globally coordinated data submission platform",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Vizcaíno et al. (2016)",
+   "note": "PRIDE database update",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Wan et al (2015)",
+   "note": "panorama of conserved animal complexes from CF-MS (5,344 fractions); evolutionary conservation of co-elution",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Bludau et al. (2023)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Wang & Marcotte (2010)",
+   "note": "physical interaction and function relationship for annotating proteins",
+   "cited_in": [
+    "Drew et al. (2021)"
+   ]
+  },
+  {
+   "ref": "Wang et al. (2007)",
+   "note": "GO semantic similarity measure used for FDR in PCprophet",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Wang et al. (2012)",
+   "note": "original PaxDb; interaction-consistency quality score and cross-species abundance equilibrium",
+   "cited_in": [
+    "Huang et al. (2023)",
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "Wang et al. (2015)",
+   "note": "PaxDb version 4.0 integrating model organisms, tissues and cell lines",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Wang et al. (2022)",
+   "note": "Zeno SWATH reference data",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Wang et al. (2024)",
+   "note": "autism PPI atlas: 100 ASD genes, 1,800 PPIs, 54 patient variants",
+   "cited_in": [
+    "Greenblatt et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Weiss et al. (2010)",
+   "note": "peptide-centric pipeline; quantitative conservation of eukaryotic core proteome",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Wells et al. (2016)",
+   "note": "PaxDb used for stoichiometry hypotheses: operon gene order optimized for ordered complex assembly",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Wessels et al. (2009)",
+   "note": "LC-MS/MS as alternative to SDS-PAGE in blue native analysis of complexes (complexome profiling)",
+   "cited_in": [
+    "Goel et al. (2024)",
+    "Havugimana et al. (2012)",
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Wilhelm et al. (2014)",
+   "note": "MS-based draft of the human proteome",
+   "cited_in": [
+    "Serrano et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Wilkinson (2016)",
+   "note": "FAIR data principles",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Winkel (2004)",
+   "note": "metabolic channeling in plants",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Wisniewski (2012)",
+   "note": "colon adenocarcinoma vs normal tissue proteome remodeling test dataset",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Wittig et al. (2006)",
+   "note": "blue native PAGE protocol",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "Wong (2023)",
+   "note": "SGD contributing S. cerevisiae complexes",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Woodsmith & Stelzl (2014)",
+   "note": "the majority of cellular processes depend on protein-protein interactions",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Wu & Minteer (2015)",
+   "note": "cross-linking MS structural evidence for Krebs cycle metabolon",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Wu (2017)",
+   "note": "functional interaction network construction (FIViz) for disease discovery",
+   "cited_in": [
+    "Milacic et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Wu (2020)",
+   "note": "cardiac IKs (KCNQ1/KCNE1) channel regulation; modifying K+ channel activity with PUFA analogs",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Xia (2014)",
+   "note": "WASH complex required for hematopoietic differentiation incl. monocyte-to-macrophage",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Xia et al. (2022)",
+   "note": "transcription factor dysregulation in Parkinson's disease",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Xing (2016)",
+   "note": "review of in vivo PPI techniques, their sensitivity, specificity and scalability",
+   "cited_in": [
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Xuan (2020)",
+   "note": "standardized multi-center proteotype analysis with high reproducibility for precision medicine",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Yamaguchi (2020)",
+   "note": "IFT20 critical for collagen biosynthesis in craniofacial bone formation in mouse",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Yang (2021)",
+   "note": "HVIDB human-virus PPI database; example database using CORUM in disease research",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Yao (2003)",
+   "note": "MTA1/MTA2 form distinct HDAC complexes associated with metastasis",
+   "cited_in": [
+    "Michalak et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Ye et al. (2020)",
+   "note": "PaxDb used in enzyme-constrained E. coli metabolic model for lysine production",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Yoshikawa (2018)",
+   "note": "Ribo Mega-SEC analysis of polysomes",
+   "cited_in": [
+    "Bludau et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Youn et al (2018)",
+   "note": "proximity labeling (119 baits) of mRNA-associated granules/bodies",
+   "cited_in": [
+    "Drew et al. (2021)",
+    "Fischer et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Yu et al. (2023)",
+   "note": "MSFragger-DIA/FragPipe for DIA data",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Yugandhar et al. (2021)",
+   "note": "PaxDb used in methodology/QC for cross-linking MS",
+   "cited_in": [
+    "Huang et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Zdrazil (2024)",
+   "note": "ChEMBL drug targets; 211 complexes cross-referenced",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Zhang (2017)",
+   "note": "peptide abundance covariation (fast-FARMS) accurately reflects protein concentration differences",
+   "cited_in": [
+    "Michalak et al. (2019)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "Zheng (2021)",
+   "note": "multiscale map of protein systems for interpreting cancer mutations; CORUM used for clinical biomarker development",
+   "cited_in": [
+    "Tsitsiridis et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Zhu (2004)",
+   "note": "HDAC2 induction in colorectal tumorigenesis; HDAC2 as therapy target",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "Zilocchi et al. (2023)",
+   "note": "crosslinked CF-MS protocol for native mitochondrial complexes in neurons/brain; MACP toolkit; 20,742 PPIs/543 complexes",
+   "cited_in": [
+    "Goel et al. (2024)"
+   ]
+  },
+  {
+   "ref": "Zschocke (2014)",
+   "note": "SSIEM classification of 487 IEMs in 86 groups, basis of ICD-11 sections 5C30–5C44",
+   "cited_in": [
+    "Ferreira et al. (2019)"
+   ]
+  },
+  {
+   "ref": "de Godoy et al. (2006)",
+   "note": "complete proteome analysis status; PTMs typically need enrichment",
+   "cited_in": [
+    "Guzman et al. (2024)"
+   ]
+  },
+  {
+   "ref": "van Dongen (2000)",
+   "note": "Markov Cluster Algorithm, top-performing complex clustering in surveys",
+   "cited_in": [
+    "Snider et al. (2015)"
+   ]
+  },
+  {
+   "ref": "van Strien et al. (2019)",
+   "note": "COPAL alignment reveals remodeling of complexes in Barth syndrome",
+   "cited_in": [
+    "Wittig & Malacarne (2021)",
+    "Gorka et al. (2019)"
+   ]
+  },
+  {
+   "ref": "van Strien et al. (2021)",
+   "note": "CEDAR online resource for complexome profiling data",
+   "cited_in": [
+    "Wittig & Malacarne (2021)"
+   ]
+  },
+  {
+   "ref": "von Appen (2015)",
+   "note": "protein expression correlation plus complex composition defines stoichiometry of the nuclear pore complex",
+   "cited_in": [
+    "Buljan et al. (2023)"
+   ]
+  },
+  {
+   "ref": "wwPDB Consortium (2023)",
+   "note": "EMDB electron microscopy records; 275 complexes cross-referenced",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  },
+  {
+   "ref": "Öztürk-Çolak (2024)",
+   "note": "FlyBase contributing Drosophila complexes",
+   "cited_in": [
+    "Balu et al. (2025)"
+   ]
+  }
+ ],
+ "big_topics": [
+  {
+   "name": "1. Protein complexes as functional and disease units",
+   "key_refs": [
+    "Lage 2007",
+    "Goh 2007",
+    "Alberts 1998",
+    "Hartwell 1999"
+   ],
+   "small_topics": [
+    {
+     "name": "complexes as molecular machines",
+     "one_line": "Most cellular functions, incl. OXPHOS and metabolism, are executed by stable multi-subunit assemblies",
+     "refs": [
+      "Alberts 1998",
+      "Hartwell 1999"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "guilt-by-association / shared phenotypes",
+     "one_line": "Subunits of one complex share phenotypes; complex membership links biochemistry to disease",
+     "refs": [
+      "Lage 2007",
+      "Goh 2007"
+     ],
+     "overlaps_with": [
+      "5 > uncharacterized proteins"
+     ]
+    },
+    {
+     "name": "disease enrichment in complex subunits",
+     "one_line": "Complex subunits are strongly enriched for OMIM/clinical pathology (p<=1e-46)",
+     "refs": [
+      "Lage 2007",
+      "Hamosh 2005"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "rare-variant convergence on complexes",
+     "one_line": "Rare variants in many genes converge on few complexes, so analysis should be complex-level",
+     "refs": [
+      "Wang 2024",
+      "Ideker & Krogan 2012"
+     ],
+     "overlaps_with": [
+      "2 > gene-product entries"
+     ]
+    },
+    {
+     "name": "collateral subunit loss",
+     "one_line": "Losing one subunit alters levels of other subunits and complex capacity",
+     "refs": [
+      "Ryan 2017",
+      "Roumeliotis 2017"
+     ],
+     "overlaps_with": [
+      "6 > AlteredPQR"
+     ]
+    },
+    {
+     "name": "complex dysfunction, not single proteins",
+     "one_line": "Disease often reflects deregulated complexes (spliceosome, proteasome, TOM/TIM)",
+     "refs": [
+      "Yang 2021",
+      "Rousseau 2018",
+      "Lin 2006"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "metabolons and moonlighting enzymes",
+     "one_line": "Metabolic enzymes form metabolons/super-complexes that channel flux; promiscuous complex members are enriched for metabolism",
+     "refs": [
+      "Sweetlove & Fernie 2013",
+      "Jørgensen 2005",
+      "Jeffery 2015"
+     ],
+     "overlaps_with": [
+      "3 > metabolons"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "2. Inborn errors of metabolism (IEMs) and mitochondrial disease",
+   "key_refs": [
+    "Morava 2015",
+    "Garrod 1902",
+    "Zschocke 2014",
+    "Lee 2017"
+   ],
+   "small_topics": [
+    {
+     "name": "pathway-based IEM definition",
+     "one_line": "An IEM is any condition where disruption of a metabolic pathway is intrinsic to pathophysiology",
+     "refs": [
+      "Morava 2015"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "scale of IEMs",
+     "one_line": "1015 IEMs in 130 groups; mitochondrial disorders largest (232, 22.9%)",
+     "refs": [
+      "Ferreira 2019 (source)"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "gene-product entries / genetic heterogeneity",
+     "one_line": "Leigh syndrome and MELAS each arise from many nuclear/mtDNA genes",
+     "refs": [
+      "Ferreira 2019 (source)"
+     ],
+     "overlaps_with": [
+      "1 > rare-variant convergence",
+      "3 > OXPHOS assembly"
+     ]
+    },
+    {
+     "name": "multifunctional complexes in IEMs",
+     "one_line": "SDH spans Krebs cycle and respiratory chain; same protein can give distinct disorders",
+     "refs": [
+      "Selak 2005",
+      "Panza 2016"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "classification and diagnostic gaps",
+     "one_line": "76% of metabolic disorders lack ICD-10 codes; SSIEM not updated since 2012",
+     "refs": [
+      "Sollie 2013",
+      "Zschocke 2014"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "gene panels and diagnostics",
+     "one_line": "Grouping by molecular aetiology guides sequencing panels and differential diagnosis",
+     "refs": [
+      "Lee 2017"
+     ],
+     "overlaps_with": []
+    }
+   ]
+  },
+  {
+   "name": "3. Complexome profiling of mitochondrial disease",
+   "key_refs": [
+    "Heide 2012",
+    "Guerrero-Castillo 2017",
+    "Alston 2018",
+    "Alahmad 2020",
+    "Wessels 2009"
+   ],
+   "small_topics": [
+    {
+     "name": "BNE-based complexome profiling",
+     "one_line": "Blue-native gel + MS works on patient tissue, kDa–10 MDa; ~1 week for patient + controls",
+     "refs": [
+      "Wittig 2006",
+      "Heide 2012",
+      "Wessels 2009",
+      "Alahmad 2020"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "assembly factor discovery (TMEM126B)",
+     "one_line": "CP identified TMEM126B as complex I assembly factor in MCIA; patients later characterised",
+     "refs": [
+      "Heide 2012",
+      "Alston 2016",
+      "Sanchez-Caballero 2016"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "complex I assembly pathway",
+     "one_line": "CP time courses resolved the complete stepwise assembly of human complex I",
+     "refs": [
+      "Guerrero-Castillo 2017"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "CP as standard diagnostic tool",
+     "one_line": "CP routinely reveals accumulated assembly intermediates in patients",
+     "refs": [
+      "Alston 2018",
+      "Alston 2020",
+      "Alahmad 2020"
+     ],
+     "overlaps_with": [
+      "2 > gene-product entries"
+     ]
+    },
+    {
+     "name": "repair and turnover defects",
+     "one_line": "DNAJC30-LHON shows impaired complex I repair, not assembly",
+     "refs": [
+      "Stenton 2021",
+      "Szczepanowska 2020"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "Barth syndrome remodelling",
+     "one_line": "COPAL alignment revealed widespread mitochondrial complex remodelling",
+     "refs": [
+      "Chatzispyrou 2018",
+      "van Strien 2019"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "metabolons and conditional remodelling",
+     "one_line": "Hypoxia degrades TMEM126B; plant TCA metabolons quantified by CN-PAGE",
+     "refs": [
+      "Fuhrmann 2018",
+      "Zhang 2017"
+     ],
+     "overlaps_with": [
+      "1 > metabolons"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "4. Methods for mapping native complexes",
+   "key_refs": [
+    "Havugimana 2012",
+    "Kristensen 2012",
+    "Heusel 2019",
+    "Skinnider & Foster 2021"
+   ],
+   "small_topics": [
+    {
+     "name": "limits of AP-MS, Y2H, proximity labelling",
+     "one_line": "Tagging/overexpression artefacts, binary-only readout, cannot resolve assembly states",
+     "refs": [
+      "Luck 2020",
+      "Huttlin 2017",
+      "Rigaut 1999",
+      "Roux 2012"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "co-fractionation MS principle",
+     "one_line": "Native separation + MS; co-elution infers complexes without tags",
+     "refs": [
+      "Havugimana 2012",
+      "Kristensen 2012",
+      "Andersen 2003"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "throughput barrier and short-gradient DIA",
+     "one_line": "Multi-condition CF-MS took weeks; SEC-SWATH with 21-min gradients cut this ~10-fold",
+     "refs": [
+      "Heusel 2020",
+      "Bludau 2020",
+      "Skinnider & Foster 2021"
+     ],
+     "overlaps_with": [
+      "6 > fast proteomics"
+     ]
+    },
+    {
+     "name": "multiplexing (SILAC/TMT)",
+     "one_line": "Up to 18-plex enables multi-condition/patient comparisons",
+     "refs": [
+      "Havugimana 2022",
+      "Skinnider 2021"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "mitochondrial complexes by crosslinked CF-MS",
+     "one_line": "Mouse brain: 20,742 PPIs / 543 mitochondrial complexes",
+     "refs": [
+      "Moutaoufik 2019",
+      "Zilocchi 2023"
+     ],
+     "overlaps_with": [
+      "3 > BNE-based CP"
+     ]
+    },
+    {
+     "name": "analysis tools",
+     "one_line": "EPIC, PrInCE, CCprofiler, SECAT, PCprophet, NOVA, ComplexFinder",
+     "refs": [
+      "Hu 2019",
+      "Stacey 2017",
+      "Rosenberger 2020",
+      "Fossati 2021",
+      "Giese 2015"
+     ],
+     "overlaps_with": []
+    }
+   ]
+  },
+  {
+   "name": "5. Human complex atlases and reference resources",
+   "key_refs": [
+    "Drew 2021",
+    "Fischer 2025",
+    "Giurgiu 2019",
+    "Meldal 2019",
+    "Huttlin 2021"
+   ],
+   "small_topics": [
+    {
+     "name": "incomplete human complexome",
+     "one_line": "hu.MAP2.0 covers 15–37% of predicted interactome; <1/5 ORFs annotated in 2012",
+     "refs": [
+      "Hart 2006",
+      "Ruepp 2010"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "integrated atlases (hu.MAP 2.0/3.0)",
+     "one_line": "hu.MAP3.0: 15,326 complexes, ~70% of proteome, from >25,000 experiments",
+     "refs": [
+      "Drew 2021",
+      "Huttlin 2021",
+      "Wan 2015"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "curated resources",
+     "one_line": "CORUM 5204 complexes (~26% genes); Complex Portal >2150 human; Reactome, GO",
+     "refs": [
+      "Giurgiu 2019",
+      "Meldal 2019",
+      "Gillespie 2022",
+      "Ashburner 2000"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "uncharacterized proteins",
+     "one_line": "472 uncharacterized proteins annotated via co-complex membership",
+     "refs": [
+      "Wang & Marcotte 2010",
+      "Stoeger 2018"
+     ],
+     "overlaps_with": [
+      "1 > guilt-by-association"
+     ]
+    },
+    {
+     "name": "disease gene candidates from complex maps",
+     "one_line": "IER3IP1–TMEM167A (MEDS), DIPK2B–NDST (heparan sulfate), RAD21 in CdLS, CORUM-OMIM linkage",
+     "refs": [
+      "Deardorff 2012",
+      "Amberger 2019",
+      "Abramson 2024"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "context-specific blind spots",
+     "one_line": "Atlases pool cell types; mutually exclusive paralog subunits and tissue-specific variants unresolved",
+     "refs": [
+      "Uhlen 2015",
+      "Gonçalves 2022"
+     ],
+     "overlaps_with": [
+      "6 > covariation"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "6. Inferring complex remodelling from whole-proteome data",
+   "key_refs": [
+    "Kustatscher 2019",
+    "Lapek 2017",
+    "Gonçalves 2017",
+    "Stewart 2023"
+   ],
+   "small_topics": [
+    {
+     "name": "fast deep proteomics",
+     "one_line": "Orbitrap Astral: ~10,000 proteins in <1 h; 180 samples/day; covers ~80% CORUM cores",
+     "refs": [
+      "Stewart 2023",
+      "Heil 2023",
+      "Bekker-Jensen 2017"
+     ],
+     "overlaps_with": [
+      "4 > throughput barrier"
+     ]
+    },
+    {
+     "name": "mitochondrial KO proteomes",
+     "one_line": "One-hour proteome applied to MGME1 KO from mitochondrial multiomics resource",
+     "refs": [
+      "Rensvold 2022"
+     ],
+     "overlaps_with": [
+      "3 > CP diagnostics"
+     ]
+    },
+    {
+     "name": "subunit co-variation as complex readout",
+     "one_line": "Strongly covarying proteins are co-complex; proteome beats transcriptome",
+     "refs": [
+      "Kustatscher 2019",
+      "Gonçalves 2017",
+      "Lapek 2017"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "ComplexBrowser complex-level quantification",
+     "one_line": "OXPHOS complexes I/IV/V down in colon cancer (CFC −4.4)",
+     "refs": [
+      "Wisniewski 2012",
+      "Ori 2016"
+     ],
+     "overlaps_with": []
+    },
+    {
+     "name": "AlteredPQR stoichiometry shifts",
+     "one_line": "Altered protein-pair ratios reveal remodelling beyond single-protein abundance (79% non-overlap)",
+     "refs": [
+      "Ryan 2017",
+      "Lapek 2017",
+      "Mertins 2016"
+     ],
+     "overlaps_with": [
+      "1 > collateral subunit loss"
+     ]
+    },
+    {
+     "name": "database-dependence limitation",
+     "one_line": "Results depend on curated complexes; CORUM/Complex Portal overlap only 16%",
+     "refs": [
+      "Ruepp 2010",
+      "Meldal 2015"
+     ],
+     "overlaps_with": []
+    }
+   ]
+  }
+ ],
+ "selected_big_topics": [],
+ "selected_small_topics": [],
+ "outline": []
+}
