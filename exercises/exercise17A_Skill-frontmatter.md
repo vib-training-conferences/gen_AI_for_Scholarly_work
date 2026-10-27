@@ -6,6 +6,10 @@ Time: 10 min
 
 ## **Step 1: Open the skill starter template in a text editor**
 
+- Open [this link](https://raw.githubusercontent.com/vib-training-conferences/gen_AI_for_Scholarly_work/refs/heads/main/.claude/skills/skill-starter/SKILL.md) in a browser
+- Click on `Raw` on the right upper side of the page to get the text view of the markdown file.
+- Copy and paste in the your text editor.
+- Alternatively, download the SKILL.md file by clicking on the Download icon and open it in the text editor.
 
 ## **Step 2: Discuss in pairs about the main elements of the description**
 
