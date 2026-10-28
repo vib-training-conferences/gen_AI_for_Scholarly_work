@@ -1,10 +1,13 @@
 # Exercise 3:
 
-- Open your browser and surf to https://www.litmaps.com/ and https://www.connectedpapers.com/ 
+- Open your browser and surf to
 
-1. Login using the created account
+[Litmaps](https://www.litmaps.com/)
+[Connected Papers](https://www.connectedpapers.com/)
 
-2. Choose one of the papers you found in the previous activities
+1. Login or create an account
+
+2. Choose one of the papers of your liking, preferentially a review paper.
 
 
 3. Explore the links between the core paper and its network
@@ -15,4 +18,6 @@
 - Papers of the previous activities are listed?
 
 - Are there new papers?
+
+- Do both have similar results?
 
