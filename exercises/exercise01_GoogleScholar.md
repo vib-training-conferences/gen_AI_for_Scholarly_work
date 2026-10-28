@@ -6,13 +6,17 @@
 
 ## Activity
 
-1. Use Copilot to generate keywords and generate a Google Scholar search string
+1. Use Copilot to:
 
-2. Iteration: Ask for different keywords or to apply in a different search (e.g.: Pubmed)
+- generate keywords 
+- generate a Google Scholar search string
+
+2. Iteration: 
+ - Ask for different keywords 
+ - to apply in a different search (e.g.: Pubmed)
+ - identify topics for further exploration
 
 3. Apply the string and explore what comes out 
-
-4. Iteration: identify topics for further exploration
 
 P.S.: Evaluate the results in each step.
 
