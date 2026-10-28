@@ -3,15 +3,24 @@
 
 **Prompt**
 
-As a literature search expert and bioinformatician, list scientific publications about multiple omics and human protein complexome and metabolism. 
+Find scientific publications about multiple omics and human protein complexome and metabolism. 
 
-List one publication per line with the link for the paper.
+> P.S.: 
+> This tools optimize the prompt for you.
+> Prompting startegies are more relevant in
+> tools like Copilot, ChatGPT, Claude, etc.
 
 **Activity**
 
-- Open your browser and surf to https://undermind.ai, https://perplexity.ai and https://asta.allen.ai 
+- Open your browser and surf to 
+
+[Undermind](https://undermind.ai)
+[Perplexity](https://perplexity.ai)
+[Asta](https://asta.allen.ai )
 
 - Use the same prompt (above) in all of them and compare the results
+
+- Iterate: Ask for more broad or more focus results
 
 ***Question to address:***
 
