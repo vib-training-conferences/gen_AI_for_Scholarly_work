@@ -4,6 +4,36 @@
 
 - Zoom in to a specific question and focus on generating keywords, search strings, with subsequent topic scoping:
 
+## Activity
+
+1. Use Copilot to generate keywords and generate a Google Scholar search string
+
+2. Iteration: Ask for different keywords or to apply in a different search (e.g.: Pubmed)
+
+3. Apply the string and explore what comes out 
+
+4. Iteration: identify topics for further exploration
+
+P.S.: Evaluate the results in each step.
+
+Possible Promtp
+-----------------
+
+'''
+
+You are an expert in scientific literature search specialized in  bioinformatics, proteomics, and computational biology. 
+
+Identify keywords that can be used to build Google Scholar search strings, create three suggestions of search strings 
+
+(1) Specific
+(2) Balanced
+(3) Broad
+
+Focus Topic: Proteomic Responses of Plants to Climate Change Stress
+
+
+'''
+
 ## Steps to keep in mind
 
 ```
@@ -34,17 +64,6 @@ C. Search String 1 (Specific)
 D. Search String 2 (Balanced) 
 E. Search String 3 (Broad) 
 ```
-## Activity
-
-1. Use Copilot to generate keywords and generate a Google Scholar search string
-
-2. Iteration: Ask for different keywords
-
-3. Apply the string and explore what comes out of Google Scholar
-
-4. Iteration: identify topics for further exploration
-
-P.S.: Evaluate the results in each step.
 
 ## Activity reflection
 
